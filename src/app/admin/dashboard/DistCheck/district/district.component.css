@@ -22,15 +22,9 @@ select {
     margin-top: 5px;
 }
 
-.botones {
-    width: 50px;
-    height: 25px;
-    margin-right: 20px;
-}
-
 .btn {
-    width: 150px;
-    height: 50px;
+    width: 130px;
+    height: 40px;
 
 }
 
@@ -59,14 +53,6 @@ input[type="file"]::file-selector-button {
     border: none;
     padding-left: 10px;
     width: 200px;
-}
-
-.custom-button {
-    background-color: #C8DBD5;
-    padding: 5px 4px;
-    border-radius: 0.3rem;
-    border: none;
-    cursor: pointer;
 }
 
 

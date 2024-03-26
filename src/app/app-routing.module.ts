@@ -9,6 +9,12 @@ import { ProducComponent } from './admin/dashboard/ProdCheck/produc/produc.compo
 import { UpdproComponent } from './admin/dashboard/ProdCheck/updpro/updpro.component';
 import { RegionComponent } from './admin/dashboard/RegCheck/region/region.component';
 import { UpdregComponent } from './admin/dashboard/RegCheck/updreg/updreg.component';
+import { DistrictComponent } from './admin/dashboard/DistCheck/district/district.component';
+import { UpddistComponent } from './admin/dashboard/DistCheck/upddist/upddist.component';
+import { MunicipioComponent } from './admin/dashboard/MuniCheck/municipio/municipio.component';
+import { UpdmuniComponent } from './admin/dashboard/MuniCheck/updmuni/updmuni.component';
+import { LocationComponent } from './admin/dashboard/LocCheck/location/location.component';
+import { UpdlocComponent } from './admin/dashboard/LocCheck/updloc/updloc.component';
 
 const routes: Routes = [
   {
@@ -46,6 +52,30 @@ const routes: Routes = [
   {
     path:'update-region/:id',
     component:UpdregComponent
+  },
+  {
+    path:'district',
+    component:DistrictComponent
+  }, 
+  {
+    path:'update-district/:id',
+    component:UpddistComponent
+  },
+  {
+    path:'municipio',
+    component:MunicipioComponent
+  }, 
+  {
+    path:'update-municipio/:id',
+    component:UpdmuniComponent
+  },
+  {
+    path:'localidad',
+    component:LocationComponent
+  }, 
+  {
+    path:'update-localidad/:id',
+    component:UpdlocComponent
   },
 ];
 

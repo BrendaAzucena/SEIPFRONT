@@ -14,36 +14,32 @@ input{
 
 
 select{
+   
+ 
     box-shadow: 1px 1px 3px  rgb(122, 122, 122);
     margin-top: 5px;
 }
-.botones{
-width: 50px;
-height: 25px;
-margin-right: 20px;
-}
+
 .btn{
-    width:150px;
-    height: 50px;
+    width:130px;
+    height: 40px;
     
 }
 .textoInput{
     font-family: 'Montserrat'; 
-        color: rgb(53, 53, 53);
+        color: rgb(66, 66, 66);
         font-weight: 700;
-        font-size: 18px;
+        font-size: 15px;
         margin-bottom: 5px;
 }
 
-
-
-dialog {
-    padding: 0;
-    border: 1px solid #d9d3d3;
-    box-shadow: 0px 4px 4px #7B7B7C(146, 146, 146, 0.9);
-
+.textoInfo{
+    font-family: 'Montserrat'; 
+        color: rgb(255, 255, 255);
+       
+        font-size: 15px;
+       
 }
-
 
 
 input[type="file"]::file-selector-button {
@@ -56,13 +52,21 @@ input[type="file"]::file-selector-button {
     width: 200px;
 }
 
+.custom-button {
+    background-color: #C8DBD5;
+    padding: 5px 4px;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+}
+
 
 .container-fluid {
     width: 80%;
   }
 
   .marginput{
-    margin-top: 40px;
+    margin-top: 15px;
 
   }
   .fondotabla{
@@ -73,3 +77,14 @@ input[type="file"]::file-selector-button {
 td{
     border:solid 1px rgb(129, 129, 129);
 }
+
+.botones{
+    width: 50px;
+    height: 25px;
+    margin-right: 20px;
+    }
+    .btn{
+        width:150px;
+        height: 50px;
+        
+    }

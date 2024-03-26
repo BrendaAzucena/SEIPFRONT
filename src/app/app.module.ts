@@ -9,14 +9,17 @@ import { SharedModule } from './shared/module/shared.module';
 import { SpemodModule } from './admin/dashboard/EspCheck/spemod/spemod.module';
 import { ArtemodModule } from './admin/dashboard/ArtPCheck/artemod/artemod.module';
 import { PromodModule } from './admin/dashboard/ProdCheck/promod/promod.module';
-import { RegionComponent } from './admin/dashboard/RegCheck/region/region.component';
-import { UpdregComponent } from './admin/dashboard/RegCheck/updreg/updreg.component';
 import { RegmodModule } from './admin/dashboard/RegCheck/regmod/regmod.module';
+import { DismodModule } from './admin/dashboard/DistCheck/dismod/dismod.module';
+import { MunmodModule } from './admin/dashboard/MuniCheck/munmod/munmod.module';
+import { LocationComponent } from './admin/dashboard/LocCheck/location/location.component';
+import { UpdlocComponent } from './admin/dashboard/LocCheck/updloc/updloc.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-
+    LocationComponent,
+    UpdlocComponent,
       
   ],
   imports: [
@@ -28,6 +31,8 @@ import { RegmodModule } from './admin/dashboard/RegCheck/regmod/regmod.module';
     SharedModule,
     PromodModule,
     ArtemodModule,
+    DismodModule,
+    MunmodModule,
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
