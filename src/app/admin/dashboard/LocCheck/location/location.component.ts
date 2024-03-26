@@ -80,12 +80,14 @@ editar(id = []){
       () => {
         this.data.splice(iControl, 1);
         window.history.replaceState({}, '', '/localidad'); 
+        window.location.reload(); 
       },
       (error) => {
         console.log('Error al eliminar:', error);
       }
     );
   }
+  
 
   cancelar() {
     this.router.navigateByUrl('panel');
