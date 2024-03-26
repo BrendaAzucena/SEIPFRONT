@@ -1,0 +1,13 @@
+select {
+    box-shadow: 3px 3px 5px rgb(122, 122, 122);
+}
+
+p {
+    font-family: 'Montserrat';
+    font-size: 17px;
+
+}
+
+.text-upp {
+    text-transform: uppercase;
+}

@@ -1,0 +1,33 @@
+.footer-background {
+    background-color: #7B1E34;
+    color: white;
+
+
+    bottom: 0;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #7B1E34;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.line {
+    height: 3px;
+    color: #fccd61;
+    background-color: #fccd61;
+}
+
+.logo {
+    width: 300px;
+    height: 150px;
+    object-fit: scale-down;
+}
+
+.bandafooter {
+    width: 100%;
+}

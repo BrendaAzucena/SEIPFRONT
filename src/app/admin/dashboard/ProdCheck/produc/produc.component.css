@@ -1,0 +1,30 @@
+select {
+    box-shadow: 3px 3px 5px rgb(122, 122, 122);
+}
+
+.borderso{
+    border-top: solid 1px rgb(199, 199, 199);
+    
+}
+input{
+    border:  solid 1px  rgb(134, 134, 134);
+    margin-top: 5px;
+   
+}
+
+
+
+select{
+    box-shadow: 1px 1px 3px  rgb(122, 122, 122);
+    margin-top: 5px;
+}
+
+
+  .fondotabla{
+    background-color: #3d3d3d;
+    color: rgb(255, 255, 255);
+    border:solid 1px rgb(129, 129, 129);
+  }
+td{
+    border:solid 1px rgb(129, 129, 129);
+}

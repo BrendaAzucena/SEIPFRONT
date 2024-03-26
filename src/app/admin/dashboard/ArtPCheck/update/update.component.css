@@ -1,0 +1,24 @@
+select {
+    box-shadow: 3px 3px 5px rgb(122, 122, 122);
+}
+
+p {
+    font-family: 'Montserrat';
+    font-size: 17px;
+
+}
+
+.container {
+    width: 50%;
+}
+
+
+.edition {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    background-color: #020202;
+    color: white;
+    font-size: 24px;
+    font-family: 'Montserrat';
+}
