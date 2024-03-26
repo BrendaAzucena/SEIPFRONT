@@ -79,8 +79,7 @@ editar(id = []){
     this.api.deleteL(id).subscribe(
       () => {
         this.data.splice(iControl, 1);
-        window.history.replaceState({}, '', '/municipio'); // Reemplazar la URL actual por la URL del municipio
-        window.location.reload(); // Recargar la página
+        window.history.replaceState({}, '', '/localidad'); 
       },
       (error) => {
         console.log('Error al eliminar:', error);
