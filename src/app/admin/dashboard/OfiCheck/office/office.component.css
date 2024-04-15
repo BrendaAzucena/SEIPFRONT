@@ -11,3 +11,20 @@ p {
 .text-upp {
     text-transform: uppercase;
 }
+
+.search-input {
+    padding: 8px 12px; 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    transition: border-color 0.3s ease-in-out; 
+    width: 37%; 
+  }
+  
+  .search-input:focus {
+    outline: none; 
+    border-color: #007bff; 
+  }
+  

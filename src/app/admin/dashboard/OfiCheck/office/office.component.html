@@ -7,8 +7,8 @@
         <p style="font-family: 'Montserrat';font-size: 22px; "><a href="panel" style="text-decoration:none">Panel</a>
         </p>
         <i class="bi bi-chevron-right" style="font-size: 22px;"></i>
-        <p style="font-family: 'Montserrat';font-size: 22px; "><a href="office"
-                style="text-decoration:none">Oficina</a></p>
+        <p style="font-family: 'Montserrat';font-size: 22px; "><a href="office" style="text-decoration:none">Oficina</a>
+        </p>
 
     </div>
     <a href="#" style="font-family: 'Montserrat';font-size: 22px; color:blue; margin-right:15px;">Manual de usuario</a>
@@ -23,11 +23,9 @@
             <div class="row">
 
                 <h1> Lista de oficinas</h1>
-
-                <div class="col-lg-6 col-lx-4">
-
-                    <table class="table table-bordered">
-
+                <div class="col-lg-6 col-lx-4" >
+                    <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Buscar oficina.." class="search-input">
+                    <table class="table table-bordered" id="myTable">
                         <thead style="color:DarkCyan" class="text-center table-dark">
                             <tr>
                                 <th scope="col" style="background-color: #7B1E34;"># </th>
@@ -36,18 +34,32 @@
                             </tr>
                         </thead>
                         <tbody class="text-center text-upp">
-                            <tr *ngFor="let ofi of data ; let iControl = index">
+                            <tr *ngFor="let ofi of displayedData; let iControl = index">
                                 <td>{{ofi.id}}</td>
                                 <td class="text-upp">{{ofi.NombreOficina}}</td>
-                                <td><a type="button" (click)="editar(ofi.id)"><i class="bi bi-pen"></i></a>
+                                <td><a type="button" (click)="editar(ofi.id)" style="margin-right: 30%;"><i
+                                            class="bi bi-pen"></i></a>
                                     <a type="button" (click)="borrar(ofi.id, iControl)"><i class="bi bi-trash"
-                                            style="margin-left: 6%;"></i></a>
+                                            style="margin-left: 30%; color: #6b6a6a;"></i></a>
                                 </td>
-
                             </tr>
                         </tbody>
                     </table>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item ">
+                                <a class="page-link" type="button" (click)="previousPage()">Anterior</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" type="button" (click)="nextPage()">Siguiente</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
+
+
+
+
 
 
                 <div class="col-lg-2 col-lx-4"></div>

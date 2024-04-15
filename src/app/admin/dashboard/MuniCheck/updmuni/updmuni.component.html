@@ -32,10 +32,16 @@
                 style="text-transform: uppercase;" [(ngModel)]="datosMunicipio.NombreMunicipio">
         </div>
         <div class="form-group">
+            <label for="exampleFormControlInput1">Nombre de Municipio</label>
+            <input type="text" required class="form-control" formControlName="Disid" 
+                style="text-transform: uppercase;" [(ngModel)]="datosMunicipio.Disid" ngFor="let distrito of distritos" value="distrito.NombreDistrito">
+        </div>
+        <div class="form-group">
             <label class="control-label textoInput">Nombre del Distrito:</label>
-            <select class="form-select " id="" name="Disid" formControlName="Disid" [(ngModel)]="datosMunicipio.Disid"
+            <select class="form-select " id="Disid" name="Disid" formControlName="Disid" [(ngModel)]="datosMunicipio.Disid"
                 #Disid>
-                <option *ngFor="let distrito of distritos" [value]="distrito.id">{{ distrito.NombreDistrito}}
+                <option *ngFor="let distrito of distritos" [value]="distrito.id">{{
+                    distrito.NombreDistrito}}
                 </option>
             </select>
         </div>

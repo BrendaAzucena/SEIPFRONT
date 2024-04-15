@@ -15,8 +15,24 @@ import { MunicipioComponent } from './admin/dashboard/MuniCheck/municipio/munici
 import { UpdmuniComponent } from './admin/dashboard/MuniCheck/updmuni/updmuni.component';
 import { LocationComponent } from './admin/dashboard/LocCheck/location/location.component';
 import { UpdlocComponent } from './admin/dashboard/LocCheck/updloc/updloc.component';
+import { LoginComponent } from './admin/login/login/login.component';
+import { SolicitudComponent } from './admin/Consultas/solicitud/solicitud/solicitud.component';
+import { UEFComponent } from './admin/Consultas/UEF/uef/uef.component';
 
 const routes: Routes = [
+  
+  {
+    path:'',
+    component:LoginComponent
+  },
+  {
+    path:'solicitud',
+    component:SolicitudComponent
+  },
+  {
+    path:'UEF',
+    component:UEFComponent
+  },
   {
     path:'office',
     component:OfficeComponent

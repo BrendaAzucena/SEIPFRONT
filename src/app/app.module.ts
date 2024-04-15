@@ -13,13 +13,14 @@ import { RegmodModule } from './admin/dashboard/RegCheck/regmod/regmod.module';
 import { DismodModule } from './admin/dashboard/DistCheck/dismod/dismod.module';
 import { MunmodModule } from './admin/dashboard/MuniCheck/munmod/munmod.module';
 import { LocationComponent } from './admin/dashboard/LocCheck/location/location.component';
-import { UpdlocComponent } from './admin/dashboard/LocCheck/updloc/updloc.component';
-
+import { LoginmodModule } from './admin/login/loginmod/loginmod.module';
+import { SolimodModule } from './admin/Consultas/solicitud/solimod/solimod.module';
+import { UEFMModule } from './admin/Consultas/UEF/uefm/uefm.module';
+import { NgxPaginationModule } from 'ngx-pagination';
 @NgModule({
   declarations: [
     AppComponent,
     LocationComponent,
-    UpdlocComponent,
       
   ],
   imports: [
@@ -32,10 +33,14 @@ import { UpdlocComponent } from './admin/dashboard/LocCheck/updloc/updloc.compon
     PromodModule,
     ArtemodModule,
     DismodModule,
+    LoginmodModule,
+    SolimodModule,
+    UEFMModule,
     MunmodModule,
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,6 +7,30 @@
 
 }
 
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    background-color: #1F618D;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .scroll-to-top-btn:hover {
+    background-color: #2471A3;
+  }
+  
+
+
+
+
 .size {
     font-size: 25px;
 }
