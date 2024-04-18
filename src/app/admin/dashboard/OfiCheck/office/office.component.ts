@@ -106,7 +106,7 @@ export class OfficeComponent implements OnInit {
       if (result.isConfirmed) {
         this.api.delete(id).subscribe(
           () => {
-            this.data.splice(iControl, 1);
+            this.displayedData.splice(iControl, 1);
             swalWithBootstrapButtons.fire({
               title: "¡Eliminado!",
               text: "El dato ha sido eliminado correctamente",
@@ -132,8 +132,8 @@ export class OfficeComponent implements OnInit {
   }
 
 
-  cancelar() {
-    this.router.navigateByUrl('office');
+ limpiar() {
+   this.FormOfi.reset();
   }
 
 

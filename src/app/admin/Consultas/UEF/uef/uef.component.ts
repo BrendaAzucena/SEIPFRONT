@@ -18,7 +18,6 @@ export class UEFComponent implements OnInit {
   muni: Municipio[] = [];
   locali: Localidad[] = [];
   FormUni: FormGroup;
-  state = false;
 
   constructor(private api: ApiService, private router: Router, public formulario: FormBuilder) {
     const hoy = new Date();
@@ -64,12 +63,6 @@ export class UEFComponent implements OnInit {
     this.oficin();
     this.Localidades();
   }
-
-  btnfuntion() {
-    this.state = !this.state;
-  }
-  
-
 
   formatoFecha(fecha: Date): string {
     const dia = fecha.getDate().toString().padStart(2, '0');

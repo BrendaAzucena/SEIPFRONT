@@ -1,4 +1,3 @@
-
 <app-header></app-header>
 
 
@@ -17,7 +16,7 @@
    <a href="#" style="font-family: 'Montserrat';font-size: 22px; color:blue; margin-right:15px;">Manual de usuario</a>
 
 </div>
- 
+
 <section class="container ">
 
 
@@ -60,14 +59,11 @@
             </div>
 
 
-
-
-
             <div class="col-md-4 marginput">
                <div class="form-group">
                   <label class="control-label textoInput">FECHA:</label>
 
-                  <input class="form-control required" id="" name="" formControlName="FechaRegistro" type="date"
+                  <input class="form-control required" id="" name="" formControlName="FechaRegistro" type="date" 
                      required>
                   <p class="vacio" id=""></p>
                </div>
@@ -75,10 +71,10 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <input type="checkbox" (click)="btnfuntion()">
+                  <input type="checkbox">
                   <label class="control-label textoInput" style="margin-left: 5px;">CAPTURAR RNPA:</label>
                   <input class="form-control mayus" id="" name="RNPA" formControlName="RNPA" maxlength="10" type="text"
-                     [disabled]="state">
+                    >
                   <p class="vacio" id=""></p>
                </div>
             </div>
@@ -93,7 +89,6 @@
             </div>
 
 
-
             <div class="col-md-4 marginput">
                <div class="form-group">
                   <label class="control-label textoInput">NOMBRES(S):</label>
@@ -104,7 +99,7 @@
                      <div *ngIf="FormUni.controls['Nombres'].errors">
                         <label class="control-label " for=""
                            style="background-color: #eb0339; color:white; font-size:12px;"> <i
-                              class="bi bi-exclamation-circle-fill"></i> El nombre es obligatorio</label>
+                              class="bi bi-exclamation-circle-fill"></i> El Nombre es obligatorio</label>
                      </div>
 
                   </div>
@@ -211,12 +206,13 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                   <label class="control-label textoInput">FECHA DE NACIMIENTO:</label>
-                   <input class="form-control required" id="" name="" formControlName="FechaNacimiento" type="date" required >
-                   <p class="vacio" id=""></p>
+                  <label class="control-label textoInput">FECHA DE NACIMIENTO:</label>
+                  <input class="form-control required" id="" name="" formControlName="FechaNacimiento" type="date"
+                     required>
+                  <p class="vacio" id=""></p>
                </div>
-           </div>
-           
+            </div>
+
 
             <div class="col-md-4 marginput">
                <div class="form-group">
@@ -621,44 +617,46 @@
                         <td>Acta de nacimiento</td>
                         <td>
 
-                           <label for="pdfFile" class="custom-input custom-button">
+                           <!--  <label for="pdfFile" class="custom-input custom-button">
                               <i class="bi bi-folder-plus"></i> Subir PDF
                            </label>
                            <input class="form-control required input " type="file" accept=".pdf" class="file-input"
-                              id="" name="" formControlName="DocActaNacimiento" required>
-                             
-                           <!--   Button trigger modal 
+                              id="" name="" formControlName="DocActaNacimiento" required> -->
+
+                           <!--INICIO DEL MODAL-->
                            <button type="button" class="custom-input custom-button" data-bs-toggle="modal"
-                              data-bs-target="#exampleModal">
+                              data-bs-target="#staticBackdrop">
                               <i class="bi bi-folder-plus"></i> Subir PDF
                            </button>
 
-                           <div class="modal fade show" style="display: block;" id="exampleModal" tabindex="-1"
-                              aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                              data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                              aria-hidden="true">
                               <div class="modal-dialog">
                                  <div class="modal-content">
                                     <div class="modal-header">
-                                       <h5 class="modal-title" id="exampleModalLabel">INFORMACIÓN</h5>
+                                       <h5 class="modal-title" id="staticBackdropLabel">INFORMACIÓN</h5>
                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                          aria-label="Close" ></button>
+                                          aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                       <form action="procesar_subida.php" method="post" enctype="multipart/form-data">
-                                          <label for="pdfFile" class="custom-input custom-button">
-                                             <i class="bi bi-folder-plus"></i> Subir PDF
-                                         </label> 
-                                          <input type="file" name="pdfFile" id="pdfFile" accept=".pdf" class="file-input">
-                                       </form>
+
+                                       <label for="pdfFile" class="custom-input custom-button">
+                                          <i class="bi bi-folder-plus"></i> Subir PDF
+                                       </label>
+                                       <input class="form-control required input " type="file" accept=".pdf"
+                                          class="file-input" id="" name="" formControlName="DocActaNacimiento" required>
+
                                     </div>
                                     <div class="modal-footer">
-                                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                                        id="myBtn"  >Cerrar</button>
+                                       <button type="button" class="btn btn-secondary"
+                                          data-bs-dismiss="modal">Cerrar</button>
                                        <button type="button" class="btn btn-primary">Guardar</button>
                                     </div>
                                  </div>
                               </div>
                            </div>
-                           -->
+                           <!--FIN DEL MODAL-->
                         </td>
                      </tr>
                      <tr>
@@ -838,10 +836,10 @@
 
       </form>
 
+
+
    </div>
 </section>
 
 
 <app-footer></app-footer>
-
-
