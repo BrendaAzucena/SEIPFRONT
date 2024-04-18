@@ -3,6 +3,7 @@ import { ApiService } from '../service/api.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Office } from '../interfaces/office';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-alter',
@@ -52,13 +53,21 @@ export class AlterComponent {
     });
   }
 
+ 
   put(): any {
-
     this.api.editOfi(this.idOficina, this.formuOfi.value).subscribe(datosOficinas => {
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Se edito correctamente",
+        showConfirmButton: false,
+        timer: 1500
+      });
+
+
       this.router.navigateByUrl('office');
-
-    });
-
+      });
+    };
   }
-}
+
 
