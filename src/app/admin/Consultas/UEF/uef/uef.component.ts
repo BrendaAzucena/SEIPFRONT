@@ -94,7 +94,7 @@ export class UEFComponent implements OnInit {
     });
   }
 
- 
+
   enviar(): any {
     this.api.agreUni(this.FormUni.value).subscribe(() => {
       this.router.navigateByUrl('solicitud', { skipLocationChange: false }).then(() => {
@@ -103,5 +103,5 @@ export class UEFComponent implements OnInit {
     });
   }
 
-  
+
 }
