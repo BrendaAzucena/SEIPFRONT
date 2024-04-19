@@ -18,12 +18,11 @@ export class UEFComponent implements OnInit {
   muni: Municipio[] = [];
   locali: Localidad[] = [];
   FormUni: FormGroup;
-
   constructor(private api: ApiService, private router: Router, public formulario: FormBuilder) {
     const hoy = new Date();
     const fechaActual = this.formatoFecha(hoy);
     this.FormUni = this.formulario.group({
-      FechaRegistro: [fechaActual], 
+      FechaRegistro: [{ value: fechaActual, disabled: true }],
       Ofcid: [''],
       RNPA: ['', Validators.required],
       RFC: ['', Validators.required],

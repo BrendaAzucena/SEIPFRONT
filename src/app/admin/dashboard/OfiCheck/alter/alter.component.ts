@@ -64,7 +64,6 @@ export class AlterComponent {
         timer: 1500
       });
 
-
       this.router.navigateByUrl('office');
       });
     };
