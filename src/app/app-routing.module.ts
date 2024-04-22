@@ -20,78 +20,78 @@ import { SolicitudComponent } from './admin/Consultas/solicitud/solicitud/solici
 import { UEFComponent } from './admin/Consultas/UEF/uef/uef.component';
 
 const routes: Routes = [
-  
+
   {
-    path:'',
-    component:LoginComponent
+    path: '',
+    component: LoginComponent
   },
   {
-    path:'solicitud',
-    component:SolicitudComponent
+    path: 'solicitud',
+    component: SolicitudComponent
   },
   {
-    path:'UEF',
-    component:UEFComponent
+    path: 'UEF',
+    component: UEFComponent
   },
   {
-    path:'office',
-    component:OfficeComponent
+    path: 'office',
+    component: OfficeComponent
   },
   {
-    path:'update-office/:id',
-    component:AlterComponent
+    path: 'update-office/:id',
+    component: AlterComponent
   },
   {
-    path:'species',
-    component:SpeciesComponent
+    path: 'species',
+    component: SpeciesComponent
   },
   {
-    path:'arte',
-    component:ArtepComponent
+    path: 'arte',
+    component: ArtepComponent
   },
   {
-    path:'update-arte/:id',
-    component:UpdateComponent
+    path: 'update-arte/:id',
+    component: UpdateComponent
   },
   {
-    path:'product',
-    component:ProducComponent
-  },  
-  {
-    path:'update-product/:id',
-    component:UpdproComponent
+    path: 'product',
+    component: ProducComponent
   },
   {
-    path:'region',
-    component:RegionComponent
-  }, 
-  {
-    path:'update-region/:id',
-    component:UpdregComponent
+    path: 'update-product/:id',
+    component: UpdproComponent
   },
   {
-    path:'district',
-    component:DistrictComponent
-  }, 
-  {
-    path:'update-district/:id',
-    component:UpddistComponent
+    path: 'region',
+    component: RegionComponent
   },
   {
-    path:'municipio',
-    component:MunicipioComponent
-  }, 
-  {
-    path:'update-municipio/:id',
-    component:UpdmuniComponent
+    path: 'update-region/:id',
+    component: UpdregComponent
   },
   {
-    path:'localidad',
-    component:LocationComponent
-  }, 
+    path: 'district',
+    component: DistrictComponent
+  },
   {
-    path:'update-localidad/:id',
-    component:UpdlocComponent
+    path: 'update-district/:id',
+    component: UpddistComponent
+  },
+  {
+    path: 'municipio',
+    component: MunicipioComponent
+  },
+  {
+    path: 'update-municipio/:id',
+    component: UpdmuniComponent
+  },
+  {
+    path: 'localidad',
+    component: LocationComponent
+  },
+  {
+    path: 'update-localidad/:id',
+    component: UpdlocComponent
   },
 ];
 
@@ -100,5 +100,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {
-  
- }
+
+}

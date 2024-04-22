@@ -48,7 +48,7 @@
             <div class="col-md-4 marginput ">
                <div class="form-group">
                   <div class="d-flex justify-content-between">
-                     <label class="control-label textoInput">OFICINA:</label>
+                     <label class="control-label textoInput">OFICINA<span id="">*</span>:</label>
                   </div>
                   <select class="form-select required" id="" name="Ofcid" formControlName="Ofcid" #Ofcid>
                      <option value="">Selecciona una opción</option>
@@ -62,7 +62,7 @@
             <div class="col-md-4 marginput">
                <div class="form-group">
                   <label class="control-label textoInput">FECHA:</label>
-                  <input class="form-control required" id="" name="" formControlName="FechaRegistro" type="date" 
+                  <input class="form-control required" id="" name="" formControlName="FechaRegistro" type="date"
                      required>
                   <p class="vacio" id=""></p>
                </div>
@@ -72,8 +72,7 @@
                <div class="form-group">
                   <input type="checkbox">
                   <label class="control-label textoInput" style="margin-left: 5px;">CAPTURAR RNPA:</label>
-                  <input class="form-control mayus" id="" name="RNPA" formControlName="RNPA" maxlength="10" type="text"
-                    >
+                  <input class="form-control mayus" id="" name="RNPA" formControlName="RNPA" maxlength="10" type="text">
                   <p class="vacio" id=""></p>
                </div>
             </div>
@@ -87,20 +86,17 @@
 
             </div>
 
-
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">NOMBRES(S):</label>
+                  <label class="control-label textoInput">NOMBRES(S)<span id="">*</span>:</label>
                   <input class="form-control required mayus" id="" name="" formControlName="Nombres" type="text"
                      required>
                   <div *ngIf=" FormUni.controls['Nombres'].invalid && (FormUni.controls['Nombres'].dirty || 
                   FormUni.controls['Nombres'].touched) ">
                      <div *ngIf="FormUni.controls['Nombres'].errors">
-                        <label class="control-label " for=""
-                           style="background-color: #eb0339; color:white; font-size:12px;"> <i
+                        <label class="control-label " for="" style="color: #eb0339; font-size:14px;"> <i
                               class="bi bi-exclamation-circle-fill"></i> El Nombre es obligatorio</label>
                      </div>
-
                   </div>
                   <p color="danger" class="vacio" id=""></p>
                </div>
@@ -108,15 +104,14 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">APELLIDO PATERNO:</label>
+                  <label class="control-label textoInput">APELLIDO PATERNO<span id="">*</span>:</label>
                   <input class="form-control required mayus" id="" name="" formControlName="ApPaterno" type="text"
                      required>
                   <div *ngIf="FormUni.controls['ApPaterno'].invalid && (FormUni.controls['ApPaterno'].dirty || 
                   FormUni.controls['ApPaterno'].touched)">
                      <div *ngIf="FormUni.controls['ApPaterno'].errors">
-                        <label class="control-label " for=""
-                           style="background-color: #eb0339; color:white; font-size:12px;"> <i
-                              class="bi bi-exclamation-circle-fill"></i> El nombre es obligatorio</label>
+                        <label class="control-label " for="" style="color: #eb0339; font-size:14px;"> <i
+                              class="bi bi-exclamation-circle-fill"></i> El Apellido Paterno es obligatorio</label>
                      </div>
 
                   </div>
@@ -127,15 +122,14 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">APELLIDO MATERNO:</label>
+                  <label class="control-label textoInput">APELLIDO MATERNO<span id="">*</span>:</label>
                   <input class="form-control required mayus" id="" name="" formControlName="ApMaterno" type="text"
                      required>
                   <div *ngIf="FormUni.controls['ApMaterno'].invalid && (FormUni.controls['ApMaterno'].dirty || 
                   FormUni.controls['ApMaterno'].touched)">
                      <div *ngIf="FormUni.controls['ApMaterno'].errors">
-                        <label class="control-label " for=""
-                           style="background-color: #eb0339; color:white; font-size:12px;"> <i
-                              class="bi bi-exclamation-circle-fill"></i> El nombre es obligatorio</label>
+                        <label class="control-label " for="" style="color: #eb0339; font-size:14px;"> <i
+                              class="bi bi-exclamation-circle-fill"></i> El Apellido Materno es obligatorio</label>
                      </div>
 
                   </div>
@@ -145,16 +139,15 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">CURP:</label>
+                  <label class="control-label textoInput">CURP<span id="">*</span>:</label>
                   <input formControlName="CURP" type="text" required maxlength="18"
                      onkeypress="return (event.charCode >= 48 && event.charCode <= 57) ||  ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"
                      class="form-control required" style="text-transform: uppercase;">
                   <div *ngIf="FormUni.controls['CURP'].invalid && (FormUni.controls['CURP'].dirty || 
                   FormUni.controls['CURP'].touched)">
                      <div *ngIf="FormUni.controls['CURP'].errors">
-                        <label class="control-label " for=""
-                           style="background-color: #eb0339; color:white; font-size:12px;"> <i
-                              class="bi bi-exclamation-circle-fill"></i> El nombre es obligatorio</label>
+                        <label class="control-label " for="" style="color: #eb0339; font-size:14px;"> <i
+                              class="bi bi-exclamation-circle-fill"></i> El CURP es obligatorio</label>
                      </div>
 
                   </div>
@@ -173,15 +166,14 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">RFC:</label>
+                  <label class="control-label textoInput">RFC<span id="">*</span>:</label>
                   <input class="form-control required mayus" maxlength="13" id="" name="" formControlName="RFC"
                      type="text" required>
                   <div *ngIf="FormUni.controls['RFC'].invalid &&(FormUni.controls['RFC'].dirty || 
                   FormUni.controls['RFC'].touched)">
                      <div *ngIf="FormUni.controls['RFC'].errors">
-                        <label class="control-label " for=""
-                           style="background-color: #eb0339; color:white; font-size:12px;"> <i
-                              class="bi bi-exclamation-circle-fill"></i> El nombre es obligatorio</label>
+                        <label class="control-label " for="" style="color: #eb0339; font-size:14px;"> <i
+                              class="bi bi-exclamation-circle-fill"></i> El RFC es obligatorio</label>
                      </div>
 
                   </div>
@@ -192,7 +184,7 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">SEXO</label>
+                  <label class="control-label textoInput">SEXO<span id="">*</span>:</label>
                   <select class="form-select required" id="" name="" formControlName="Sexo" required>
                      <option value="" selected>Selecciona una opción</option>
                      <option value="F">FEMENINO</option>
@@ -202,10 +194,10 @@
                   <p class="vacio" id=""></p>
                </div>
             </div>
-
+            <!--Validar la fecha de nacimiento-->
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">FECHA DE NACIMIENTO:</label>
+                  <label class="control-label textoInput">FECHA DE NACIMIENTO<span id="">*</span>:</label>
                   <input class="form-control required" id="" name="" formControlName="FechaNacimiento" type="date"
                      required>
                   <p class="vacio" id=""></p>
@@ -215,16 +207,15 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">GRUPO SANGUINEO:</label>
+                  <label class="control-label textoInput">GRUPO SANGUINEO<span id="">*</span>:</label>
                   <input class="form-control required mayus" id="" name="" formControlName="GrupoSanguineo" type="text"
                      required>
 
                   <div *ngIf="FormUni.controls['GrupoSanguineo'].invalid &&(FormUni.controls['GrupoSanguineo'].dirty || 
                   FormUni.controls['GrupoSanguineo'].touched)">
                      <div *ngIf="FormUni.controls['GrupoSanguineo'].errors">
-                        <label class="control-label " for=""
-                           style="background-color: #eb0339; color:white; font-size:12px;"> <i
-                              class="bi bi-exclamation-circle-fill"></i> El nombre es obligatorio</label>
+                        <label class="control-label " for="" style="color: #eb0339; font-size:14px;"> <i
+                              class="bi bi-exclamation-circle-fill"></i> El Grupo Sanguineo es obligatorio</label>
                      </div>
 
                   </div>
@@ -235,15 +226,14 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">CORREO ELECTRONICO:</label>
+                  <label class="control-label textoInput">CORREO ELECTRONICO<span id="">*</span>:</label>
                   <input class="form-control required" id="" name="" formControlName="Email" type="text" required>
 
                   <div *ngIf="FormUni.controls['Email'].invalid && (FormUni.controls['Email'].dirty || 
                   FormUni.controls['Email'].touched)">
                      <div *ngIf="FormUni.controls['Email'].errors">
-                        <label class="control-label " for=""
-                           style="background-color: #eb0339; color:white; font-size:12px;"> <i
-                              class="bi bi-exclamation-circle-fill"></i> El nombre es obligatorio</label>
+                        <label class="control-label " for="" style="color: #eb0339; font-size:14px;"> <i
+                              class="bi bi-exclamation-circle-fill"></i> El Correo Electronico es obligatorio</label>
                      </div>
 
                   </div>
@@ -281,16 +271,15 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">NUMERO EXTERIOR:<span id="">*</span>:</label>
+                  <label class="control-label textoInput">NUMERO EXTERIOR<span id="">*</span>:</label>
                   <input class="form-control required" maxlength="10" id="" Name="" formControlName="NmExterior"
                      type="text" required>
 
                   <div *ngIf="FormUni.controls['NmExterior'].invalid &&
                    (FormUni.controls['NmExterior'].dirty || FormUni.controls['NmExterior'].touched)">
                      <div *ngIf="FormUni.controls['NmExterior'].errors">
-                        <label class="control-label " for=""
-                           style="background-color: #eb0339; color:white; font-size:12px;"> <i
-                              class="bi bi-exclamation-circle-fill"></i> El nombre es obligatorio</label>
+                        <label class="control-label " for="" style="color: #eb0339; font-size:14px;"> <i
+                              class="bi bi-exclamation-circle-fill"></i> El Numero Exterior es obligatorio</label>
                      </div>
 
                   </div>
@@ -302,15 +291,14 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">NUMERO INTERIOR:<span id="">*</span>:</label>
+                  <label class="control-label textoInput">NUMERO INTERIOR<span id="">*</span>:</label>
                   <input class="form-control required" maxlength="10" id="" name="" formControlName="NmInterior"
                      type="text" required>
                   <div *ngIf="FormUni.controls['NmInterior'].invalid && (FormUni.controls['NmInterior'].dirty || 
                FormUni.controls['NmInterior'].touched)">
                      <div *ngIf="FormUni.controls['NmInterior'].errors">
-                        <label class="control-label " for=""
-                           style="background-color: #eb0339; color:white; font-size:12px;"> <i
-                              class="bi bi-exclamation-circle-fill"></i> El nombre es obligatorio</label>
+                        <label class="control-label " for="" style="color: #eb0339; font-size:14px;"> <i
+                              class="bi bi-exclamation-circle-fill"></i> El Numero Interior es obligatorio</label>
                      </div>
 
                   </div>
@@ -323,16 +311,15 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">CODIGO POSTAL:<span id="">*</span>:</label>
+                  <label class="control-label textoInput">CODIGO POSTAL<span id="">*</span>:</label>
                   <input class="form-control required" id="" name="" formControlName="CodigoPostal" type="text"
                      maxlength="10" required>
 
                   <div *ngIf="FormUni.controls['CodigoPostal'].invalid && (FormUni.controls['CodigoPostal'].dirty || 
                FormUni.controls['CodigoPostal'].touched)">
                      <div *ngIf="FormUni.controls['CodigoPostal'].errors">
-                        <label class="control-label " for=""
-                           style="background-color: #eb0339; color:white; font-size:12px;"> <i
-                              class="bi bi-exclamation-circle-fill"></i> El nombre es obligatorio</label>
+                        <label class="control-label " for="" style="color: #eb0339; font-size:14px;"> <i
+                              class="bi bi-exclamation-circle-fill"></i> El Codigo Postal es obligatorio</label>
                      </div>
 
                   </div>
@@ -343,7 +330,7 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">REGIONES:</label>
+                  <label class="control-label textoInput">REGIONES<span id="">*</span>:</label>
                   <select class="form-select " id="" name="Locid" formControlName="Locid" #Locid>
                      <option value="">Selecciona una opción</option>
                      <option *ngFor="let localidad of locali" [value]="localidad.id">{{ localidad.NombreLocalidad}}
@@ -354,7 +341,7 @@
             </div>
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">DISTRITOS:</label>
+                  <label class="control-label textoInput">DISTRITOS<span id="">*</span>:</label>
                   <select class="form-select " id="" name="Locid" formControlName="Locid" #Locid>
                      <option value="">Selecciona una opción</option>
                      <option *ngFor="let localidad of locali" [value]="localidad.id">{{ localidad.NombreLocalidad}}
@@ -365,7 +352,7 @@
             </div>
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">MUNICIPIOS:</label>
+                  <label class="control-label textoInput">MUNICIPIOS<span id="">*</span>:</label>
                   <select class="form-select " id="" name="Locid" formControlName="Locid" #Locid>
                      <option value="">Selecciona una opción</option>
                      <option *ngFor="let localidad of locali" [value]="localidad.id">{{ localidad.NombreLocalidad}}
@@ -377,7 +364,7 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">LOCALIDAD:</label>
+                  <label class="control-label textoInput">LOCALIDAD<span id="">*</span>:</label>
                   <select class="form-select " id="" name="Locid" formControlName="Locid" #Locid>
                      <option value="">Selecciona una opción</option>
                      <option *ngFor="let localidad of locali" [value]="localidad.id">{{ localidad.NombreLocalidad}}
@@ -389,14 +376,13 @@
 
             <div class="col-md-8 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">CALLE:</label>
+                  <label class="control-label textoInput">CALLE<span id="">*</span>:</label>
                   <input class="form-control required mayus" id="" name="" formControlName="Calle" type="text" required>
                   <div *ngIf="FormUni.controls['Calle'].invalid && (FormUni.controls['Calle'].dirty || 
                    FormUni.controls['Calle'].touched)">
                      <div *ngIf="FormUni.controls['Calle'].errors">
-                        <label class="control-label " for=""
-                           style="background-color: #eb0339; color:white; font-size:12px;"> <i
-                              class="bi bi-exclamation-circle-fill"></i> El nombre es obligatorio</label>
+                        <label class="control-label " for="" style="color: #eb0339; font-size:14px;"> <i
+                              class="bi bi-exclamation-circle-fill"></i>La Calle es obligatorio</label>
                      </div>
 
                   </div>
@@ -412,9 +398,8 @@
                   <div *ngIf=" FormUni.controls['NmPrincipal'].invalid && (FormUni.controls['NmPrincipal'].dirty || 
                FormUni.controls['NmPrincipal'].touched)">
                      <div *ngIf="FormUni.controls['NmPrincipal'].errors">
-                        <label class="control-label " for=""
-                           style="background-color: #eb0339; color:white; font-size:12px;"> <i
-                              class="bi bi-exclamation-circle-fill"></i> El nombre es obligatorio</label>
+                        <label class="control-label " for="" style="color: #eb0339; font-size:14px;"> <i
+                              class="bi bi-exclamation-circle-fill"></i> El Telefono Principal es obligatorio</label>
                      </div>
 
                   </div>
@@ -425,9 +410,9 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">TIPO PRINCIPAL:</label>
+                  <label class="control-label textoInput">TIPO PRINCIPAL<span id="">*</span>:</label>
                   <select class="form-select required" id="" name="" formControlName="TpNmPrincipal" required>
-                     <option selected>Selecciona una opción</option>
+                     <option selected value="">Selecciona una opción</option>
                      <option value="CASA">CASA</option>
                      <option value="MOVIL">MOVIL</option>
                      <option value="OFICINA">OFICINA</option>
@@ -449,9 +434,8 @@
                    FormUni.controls['NmSecundario'].invalid && (FormUni.controls['NmSecundario'].dirty || 
                    FormUni.controls['NmSecundario'].touched)">
                      <div *ngIf="FormUni.controls['NmSecundario'].errors">
-                        <label class="control-label " for=""
-                           style="background-color: #eb0339; color:white; font-size:12px;"> <i
-                              class="bi bi-exclamation-circle-fill"></i> El nombre es obligatorio</label>
+                        <label class="control-label " for="" style="color: #eb0339; font-size:14px;"> <i
+                              class="bi bi-exclamation-circle-fill"></i> El Telefono Secundario es obligatorio</label>
                      </div>
 
                   </div>
@@ -461,9 +445,9 @@
 
             <div class="col-md-4 marginput">
                <div class="form-group">
-                  <label class="control-label textoInput">TIPO SECUNDARIO:</label>
+                  <label class="control-label textoInput">TIPO SECUNDARIO<span id="">*</span>:</label>
                   <select class="form-select required" id="" name="" formControlName="TpNmSecundario" required>
-                     <option selected>Selecciona una opción</option>
+                     <option selected value="">Selecciona una opción</option>
                      <option value="CASA">CASA</option>
                      <option value="MOVIL">MOVIL</option>
                      <option value="OFICINA">OFICINA</option>
@@ -549,14 +533,14 @@
             <div class="d-flex justify-content-between ">
                <div class="col-md-4 marginput">
                   <div class="form-group">
-                     <label class="control-label textoInput">FECHA DE OPERACIONES</label>
+                     <label class="control-label textoInput">FECHA DE OPERACIONES<span id="">*</span>:</label>
                      <input class="form-control required input" id="" name="" formControlName="IniOperaciones"
                         type="date" required>
                      <p class="vacio" id=""></p>
                   </div>
                </div>
                <div class="col-md-3 marginput ">
-                  <label class="control-label textoInput">ACTIVOS:</label>
+                  <label class="control-label textoInput">ACTIVOS<span id="">*</span>:</label>
                   <div class="form-check">
                      <input class="form-check-input" type="checkbox" id="activoEmbMayor"
                         formControlName="ActivoEmbMayor">
@@ -579,7 +563,7 @@
                <div class="col-md-4 marginput ">
                   <div class="form-group ">
 
-                     <label class="control-label textoInput">ACTIVIDAD PESQUERA:</label>
+                     <label class="control-label textoInput">ACTIVIDAD PESQUERA<span id="">*</span>:</label>
                      <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="activoEmbMayor"
                            formControlName="ActvAcuacultura">
@@ -662,49 +646,160 @@
                         <td>Comprobante de domicilio</td>
                         <td>
 
-                           <label for="pdfFile" class="custom-input custom-button">
+                           <!--INICIO DEL MODAL-->
+                           <button type="button" class="custom-input custom-button" data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop">
                               <i class="bi bi-folder-plus"></i> Subir PDF
-                           </label>
+                           </button>
 
-                           <input class="form-control required input" type="file" accept=".pdf" class="file-input" id=""
-                              name="" formControlName="DocComprobanteDomicilio" required>
+                           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                              data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                              aria-hidden="true">
+                              <div class="modal-dialog">
+                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                       <h5 class="modal-title" id="staticBackdropLabel">INFORMACIÓN</h5>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                          aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
 
+                                       <label for="pdfFile" class="custom-input custom-button">
+                                          <i class="bi bi-folder-plus"></i> Subir PDF
+                                       </label>
+                                       <input class="form-control required input" type="file" accept=".pdf"
+                                          class="file-input" id="" name="" formControlName="DocComprobanteDomicilio"
+                                          required>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-secondary"
+                                          data-bs-dismiss="modal">Cerrar</button>
+                                       <button type="button" class="btn btn-primary">Guardar</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--FIN DEL MODAL-->
                         </td>
                      </tr>
                      <tr>
                         <td>Curp</td>
                         <td>
-
-                           <label for="pdfFile" class="custom-input custom-button">
+                           <!--INICIO DEL MODAL-->
+                           <button type="button" class="custom-input custom-button" data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop">
                               <i class="bi bi-folder-plus"></i> Subir PDF
-                           </label>
-                           <input class="form-control required input" type="file" accept=".pdf" class="file-input" id=""
-                              name="" formControlName="DocCURP" required>
+                           </button>
 
+                           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                              data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                              aria-hidden="true">
+                              <div class="modal-dialog">
+                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                       <h5 class="modal-title" id="staticBackdropLabel">INFORMACIÓN</h5>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                          aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                       <label for="pdfFile" class="custom-input custom-button">
+                                          <i class="bi bi-folder-plus"></i> Subir PDF
+                                       </label>
+                                       <input class="form-control required input" type="file" accept=".pdf"
+                                          class="file-input" id="" name="" formControlName="DocCURP" required>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-secondary"
+                                          data-bs-dismiss="modal">Cerrar</button>
+                                       <button type="button" class="btn btn-primary">Guardar</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--FIN DEL MODAL-->
                         </td>
                      </tr>
                      <tr>
                         <td>Identificación Oficial</td>
                         <td>
-
-                           <label for="pdfFile" class="custom-input custom-button">
+                           <!--INICIO DEL MODAL-->
+                           <button type="button" class="custom-input custom-button" data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop">
                               <i class="bi bi-folder-plus"></i> Subir PDF
-                           </label>
-                           <input class="form-control required input" type="file" accept=".pdf" class="file-input" id=""
-                              name="" formControlName="DocIdentificacionOfc" required>
+                           </button>
 
+                           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                              data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                              aria-hidden="true">
+                              <div class="modal-dialog">
+                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                       <h5 class="modal-title" id="staticBackdropLabel">INFORMACIÓN</h5>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                          aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                       <label for="pdfFile" class="custom-input custom-button">
+                                          <i class="bi bi-folder-plus"></i> Subir PDF
+                                       </label>
+                                       <input class="form-control required input" type="file" accept=".pdf"
+                                          class="file-input" id="" name="" formControlName="DocIdentificacionOfc"
+                                          required>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-secondary"
+                                          data-bs-dismiss="modal">Cerrar</button>
+                                       <button type="button" class="btn btn-primary">Guardar</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--FIN DEL MODAL-->
                         </td>
                      </tr>
                      <tr>
                         <td>RFC</td>
                         <td>
 
-                           <label for="pdfFile" class="custom-input custom-button">
+                           <!--INICIO DEL MODAL-->
+                           <button type="button" class="custom-input custom-button" data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop">
                               <i class="bi bi-folder-plus"></i> Subir PDF
-                           </label>
-                           <input class="form-control required input" type="file" accept=".pdf" class="file-input" id=""
-                              name="" formControlName="DocRFC" required>
+                           </button>
 
+                           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                              data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                              aria-hidden="true">
+                              <div class="modal-dialog">
+                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                       <h5 class="modal-title" id="staticBackdropLabel">INFORMACIÓN</h5>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                          aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                       <label for="pdfFile" class="custom-input custom-button">
+                                          <i class="bi bi-folder-plus"></i> Subir PDF
+                                       </label>
+                                       <input class="form-control required input" type="file" accept=".pdf"
+                                          class="file-input" id="" name="" formControlName="DocRFC" required>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-secondary"
+                                          data-bs-dismiss="modal">Cerrar</button>
+                                       <button type="button" class="btn btn-primary">Guardar</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--FIN DEL MODAL-->
                         </td>
                      </tr>
                   </tbody>
