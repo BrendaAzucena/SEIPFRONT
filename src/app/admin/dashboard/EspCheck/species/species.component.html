@@ -50,6 +50,16 @@
                                 <label class="control-label textoInput">NOMBRE:</label>
                                 <input formControlName="NombreEspecie" type="text" required
                                     class="form-control required" style="text-transform: uppercase;">
+                                    <div *ngIf="
+                                    FormEspecie.controls['NombreEspecie'].invalid &&
+                                    (FormEspecie.controls['NombreEspecie'].dirty || FormEspecie.controls['NombreEspecie'].touched)">
+                                          <div *ngIf="FormEspecie.controls['NombreEspecie'].errors">
+                                             <label for="" style="color: #eb0339; font-size:13px;"><i
+                                                   class="bi bi-exclamation-circle-fill"></i> El Nombre es
+                                                requerido</label>
+                                          </div>
+                  
+                                       </div>
                                 <p class="vacio" id=""></p>
                             </div>
                         </div>

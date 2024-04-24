@@ -55,6 +55,16 @@
                         <label class="control-label textoInput">NOMBRE COMÚN:</label>
                         <input formControlName="NombreComun" type="text" required class="form-control required"
                            style="text-transform: uppercase;">
+                           <div *ngIf="
+                           FormProducto.controls['NombreComun'].invalid &&
+                           (FormProducto.controls['NombreComun'].dirty || FormProducto.controls['NombreComun'].touched)">
+                                 <div *ngIf="FormProducto.controls['NombreComun'].errors">
+                                    <label for="" style="color: #eb0339; font-size:13px;"><i
+                                          class="bi bi-exclamation-circle-fill"></i> El Nombre Común es
+                                       requerido</label>
+                                 </div>
+         
+                              </div>
                         <p class="vacio" id=""></p>
                      </div>
                   </div>
@@ -64,6 +74,16 @@
                         <label class="control-label textoInput">NOMBRE CIENTIFICO:</label>
                         <input formControlName="NombreCientifico" type="text" required class="form-control required"
                            style="text-transform: uppercase;">
+                           <div *ngIf="
+                           FormProducto.controls['NombreCientifico'].invalid &&
+                           (FormProducto.controls['NombreCientifico'].dirty || FormProducto.controls['NombreCientifico'].touched)">
+                                 <div *ngIf="FormProducto.controls['NombreCientifico'].errors">
+                                    <label for="" style="color: #eb0339; font-size:13px;"><i
+                                          class="bi bi-exclamation-circle-fill"></i> El Nombre Cientifico es
+                                       requerido</label>
+                                 </div>
+         
+                              </div>
                         <p class="vacio" id=""></p>
                      </div>
                   </div>

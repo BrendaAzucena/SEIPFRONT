@@ -58,11 +58,10 @@
                         style="text-transform: uppercase;">
                      <div *ngIf="
                   FormLocalidad.controls['NombreLocalidad'].invalid &&
-                  (FormLocalidad.controls['NombreLocalidad'].dirty || FormLocalidad.controls['NombreLocalidad'].touched)
-                ">
+                  (FormLocalidad.controls['NombreLocalidad'].dirty || FormLocalidad.controls['NombreLocalidad'].touched)">
                         <div *ngIf="FormLocalidad.controls['NombreLocalidad'].errors">
                            <label for="" style="color: #eb0339; font-size:13px;"><i
-                              class="bi bi-exclamation-circle-fill"></i>  El Nombre es
+                                 class="bi bi-exclamation-circle-fill"></i> El Nombre es
                               requerido</label>
                         </div>
 
@@ -105,8 +104,7 @@
                         </select>
                         <div *ngIf="
                      FormLocalidad.controls['Disid'].invalid &&
-                     (FormLocalidad.controls['Disid'].dirty || FormLocalidad.controls['Disid'].touched)
-                   ">
+                     (FormLocalidad.controls['Disid'].dirty || FormLocalidad.controls['Disid'].touched)">
                            <div *ngIf="FormLocalidad.controls['Disid'].errors">
                               <label for="" style="background-color: #7B1E34; color:white; font-size:12px;"> El distrito
                                  es requrido</label>
