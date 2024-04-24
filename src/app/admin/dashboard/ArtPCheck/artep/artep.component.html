@@ -27,7 +27,7 @@
                <table class="table   text-center"  style="text-transform: uppercase;">
              <td class=" text-center textoInfo" style="background-color: #7B1E34;">#</td>
              <td class=" text-center textoInfo" style="background-color: #7B1E34;">LISTA DE ARTES DE PESCA</td>
-             <td class=" text-center textoInfo" style="background-color: #7B1E34;">OPCIONES</td>
+             <td class=" text-center textoInfo" style="background-color: #7B1E34;">OPCIOOES</td>
                   <tr *ngFor="let pesca of data ; let iControl = index">
                     
                      <td class="textoInput" style="border: solid 1px rgb(131, 130, 130);">{{pesca.id}}</td>
@@ -59,7 +59,8 @@
                   (FormArte.controls['NombreArtePesca'].dirty || FormArte.controls['NombreArtePesca'].touched)
                 ">
                 <div *ngIf="FormArte.controls['NombreArtePesca'].errors">
-                 <label for="" style="background-color: #7B1E34; color:white; font-size:12px;">  El ubicaciónes requrido</label>
+                 <label for="" style="color: #eb0339; font-size:13px;"><i
+                  class="bi bi-exclamation-circle-fill"></i>  El Nombre requerido</label>
                 </div>
                 
                   </div>
