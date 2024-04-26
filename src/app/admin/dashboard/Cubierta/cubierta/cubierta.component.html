@@ -1,0 +1,111 @@
+<app-header></app-header>
+
+<div class="d-flex justify-content-between " style="margin-top:20px; margin-left:20px;">
+    <div class="d-flex">
+        <i class="bi bi-house-door" style="font-size: 22px;"></i>
+        <i class="bi bi-chevron-right" style="font-size: 22px;"></i>
+        <p style="font-family: 'Montserrat';font-size: 22px; "><a href="panel" style="text-decoration:none">Panel</a>
+        </p>
+        <i class="bi bi-chevron-right" style="font-size: 22px;"></i>
+        <p style="font-family: 'Montserrat';font-size: 22px; "><a href="Cubierta" style="text-decoration:none">Tipo de Cubierta</a>
+        </p>
+
+    </div>
+    <a href="#" style="font-family: 'Montserrat';font-size: 22px; color:blue; margin-right:15px;">Manual de usuario</a>
+
+</div>
+
+<body>
+
+
+    <section class="container" style="margin-top: 50px;">
+        <div class="order_boxes">
+            <div class="row">
+
+                <h1> Lista de Cubierta</h1>
+                <div class="col-lg-6 col-lx-4" >
+                    <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Buscar cubierta.." class="search-input">
+                    <table class="table table-bordered" id="myTable">
+                        <thead style="color:DarkCyan" class="text-center table-dark">
+                            <tr>
+                                <th scope="col" style="background-color: #7B1E34;"># </th>
+                                <th scope="col" style="background-color: #7B1E34;">Lista de Cubierta</th>
+                                <th scope="col" style="background-color: #7B1E34;">Opciones</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center text-upp">
+                            <tr *ngFor="let cub of displayedData; let iControl = index">
+                                <td>{{cub.id}}</td>
+                                <td class="text-upp">{{cub.NombreCubierta}}</td>
+                                <td><a type="button" (click)="editar(cub.id)" style="margin-right: 30%;"><i
+                                            class="bi bi-pen"></i></a>
+                                    <a type="button" (click)="borrar(cub.id, iControl)"><i class="bi bi-trash"
+                                            style="margin-left: 30%; color: #6b6a6a;"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item ">
+                                <a class="page-link" type="button" (click)="previousPage()">Anterior</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" type="button" (click)="nextPage()">Siguiente</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+
+
+
+
+                <div class="col-lg-2 col-lx-4"></div>
+                <div class="col-lg-4 col-lx-4">
+                    <div class="text-white p-1 text-center" style="background-color: #000000;">
+                        AGREGAR CUBIERTA
+                    </div>
+                    <form class="row" [formGroup]="FormCubierta" (submit)="enviar()" ngNativeValidate>
+
+                        <div class="col-md-lg marginput">
+                            <div class="form-group">
+                                <label class="control-label textoInput">NOMBRE:</label>
+                                <input formControlName="NombreCubierta" type="text" required
+                                    class="form-control required text-upp" style="text-transform: uppercase;">
+                                <div *ngIf="FormCubierta.controls['NombreCubierta'].invalid &&(FormCubierta.controls['NombreCubierta'].dirty || FormCubierta.controls['NombreCubierta'].touched)">
+                                    <div *ngIf="FormCubierta.controls['NombreCubierta'].errors">
+                                        <label class="control-label " for=""
+                                            style="color: #eb0339; font-size:13px;"> <i
+                                                class="bi bi-exclamation-circle-fill"></i> El Nombre es
+                                            obligatorio</label>
+                                    </div>
+
+                                </div>
+                                <p class="vacio" id=""></p>
+
+                                <div class="row">
+                                    <div class="col-lg-md">
+                                        <div class="d-flex justify-content-end" style="margin-bottom: 50px;">
+                                            <button class="btn btn-default" type="button" (click)="limpiar()"
+                                                style="background-color: rgb(110, 109, 109); color:white; margin-right: 20px;">Restaurar</button>
+                                            <button class="btn" type="submit" style="background-color: brown; color:white;">Guardar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+<app-footer></app-footer>

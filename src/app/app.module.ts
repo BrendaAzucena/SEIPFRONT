@@ -17,10 +17,18 @@ import { LoginmodModule } from './admin/login/loginmod/loginmod.module';
 import { SolimodModule } from './admin/Consultas/solicitud/solimod/solimod.module';
 import { UEFMModule } from './admin/Consultas/UEF/uefm/uefm.module';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { PanelComponent } from './admin/dashboard/PanelControl/panel/panel.component';
+import { PermodModule } from './admin/dashboard/PermisoPesca/permod/permod.module';
+import { ActmodModule } from './admin/dashboard/TActividad/actmod/actmod.module';
+import { CubiertaComponent } from './admin/dashboard/Cubierta/cubierta/cubierta.component';
+import { CumodModule } from './admin/dashboard/Cubierta/cumod/cumod.module';
+
 @NgModule({
   declarations: [
     AppComponent,
     LocationComponent,
+    PanelComponent,
+   
       
   ],
   imports: [
@@ -32,7 +40,11 @@ import { NgxPaginationModule } from 'ngx-pagination';
     SharedModule,
     PromodModule,
     ArtemodModule,
+    CumodModule,
+    PromodModule,
     DismodModule,
+    PermodModule,
+    ActmodModule,
     LoginmodModule,
     SolimodModule,
     UEFMModule,

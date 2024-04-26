@@ -18,6 +18,13 @@ import { UpdlocComponent } from './admin/dashboard/LocCheck/updloc/updloc.compon
 import { LoginComponent } from './admin/login/login/login.component';
 import { SolicitudComponent } from './admin/Consultas/solicitud/solicitud/solicitud.component';
 import { UEFComponent } from './admin/Consultas/UEF/uef/uef.component';
+import { PanelComponent } from './admin/dashboard/PanelControl/panel/panel.component';
+import { PermisosComponent } from './admin/dashboard/PermisoPesca/permisos/permisos.component';
+import { EditarppComponent } from './admin/dashboard/PermisoPesca/editarpp/editarpp.component';
+import { TipoactComponent } from './admin/dashboard/TActividad/tipoact/tipoact.component';
+import { EditartipoComponent } from './admin/dashboard/TActividad/editartipo/editartipo.component';
+import { CubiertaComponent } from './admin/dashboard/Cubierta/cubierta/cubierta.component';
+import { EditcubiertaComponent } from './admin/dashboard/Cubierta/editcubierta/editcubierta.component';
 
 const routes: Routes = [
 
@@ -92,6 +99,34 @@ const routes: Routes = [
   {
     path: 'update-localidad/:id',
     component: UpdlocComponent
+  },
+  {
+    path: 'panel',
+    component: PanelComponent
+  },
+  {
+    path: 'permisoPesca',
+    component: PermisosComponent
+  },
+  {
+    path: 'update-permisoPesca/:id',
+    component: EditarppComponent
+  },
+  {
+    path: 'TipoActividad',
+    component: TipoactComponent
+  },
+  {
+    path: 'update-TipoActividad/:id',
+    component: EditartipoComponent
+  },
+  {
+    path: 'Cubierta',
+    component: CubiertaComponent
+  },
+  {
+    path: 'update-Cubierta/:id',
+    component: EditcubiertaComponent
   },
 ];
 
